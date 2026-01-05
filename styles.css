@@ -32,3 +32,38 @@
     font-family: "Comic Sans MS", cursive, sans-serif;
   }
 }
+
+
+.design-wrapper{
+  /* keep default wrappers neutral; specific variants can override */
+  background-color: transparent;
+}
+
+.improvement-wrapper{
+  background-image: url('gpt1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+/* For the improved design, make the viewport background transparent so
+   the wrapper's background image is visible behind the content. */
+.improvement-wrapper .design-viewport {
+  background: transparent;
+}
+
+/* Use border.png as the decorative border for the improvement wrapper */
+.improvement-wrapper{
+  border: 32px solid transparent;
+  -webkit-border-image: url('border.png') 32 round;
+  border-image: url('border.png') 32 round;
+}
+
+
+
+.p1{
+   font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: bold;
+}
